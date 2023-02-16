@@ -7,26 +7,26 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-#animated_emoji {
-	color:red;
-  }
 #animated_emoji:after {
 content:"";
-animation: animated_emoji 10s linear infinite;
+animation: animated_emoji 5s linear infinite;
 }
 @keyframes animated_emoji {
-	0% { content:"💃";}
-	10% { content:"💁";}
-	20% { content:"🕉";}
-	30% { content:"☕";}
-	40% { content:"🙋";}
-	50% { content: "✨";}
-	60% { content: "🧘‍♀️";}
-	70% { content: "👩‍🎓";}
-	80% { content: "🎨";}
-	90% { content: "👩‍💻";}
-	100% { content: "🙏";}
+	0% { content: "✨";}
+	50% { content: "🧘‍♀️";}
+	100% { content: "👩‍🎓";}
 }
+
+#interest_areas:after {
+content:"";
+animation: interest_areas 5s linear infinite;
+}
+@keyframes interest_areas {
+	0% { content:"Software Engineering";}
+	50% { content:"Algorithms";}
+	100% { content:"Machine Learning";}
+}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -297,9 +297,9 @@ input, select, textarea {
 				max-width: calc(100% - 30px);
 			}
 
-				.container.medium {
-					width: 100%;
-				}
+			.container.medium {
+				width: 100%;
+			}
 
 		}
 
@@ -2067,7 +2067,7 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
-		font-weight: 600;
+		font-weight: 500;
 		color: #fff;
 	}
 
@@ -2120,6 +2120,7 @@ input, select, textarea {
 					border-right: solid 0.75em transparent;
 					border-top: solid 0.6em #282828;
 				}
+
 
 /* Articles */
 
@@ -2416,9 +2417,12 @@ input, select, textarea {
 
 		/* Nav */
 
-			#nav {
+			#nav:after {
 				height: 44px;
 				line-height: 44px;
+				width: 100%;
+				max-width: calc(100% - 0px);
+				font-size: 1em;
 			}
 
 				#nav a {
